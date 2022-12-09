@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<xacro: <xacro:include filename="file://media/materials/scripts/gazebo.material"/>
+<robot name = "linear_actuator">
+    <link name = 'link_0'>
+        <inertial>
+            <mass value="1" />
+            <inertia ixx="0.166667" ixy="0.0" ixz="0.0" iyy="0.166667" iyz="0.0" izz="0.166667"/>
+        </inertial>
+    <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="/Users/akshitshishodia/catkin_ws2/linear_actuator.stl" scale="0.05"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="/Users/akshitshishodia/catkin_ws2/linear_actuator.stl" scale="0.05"/>
+            </geometry>
+        </collision>
+    </link>
+    
+    <link name= 'link_3'>
+        <inertial>
+            <mass>0.2166</mass>
+            <inertia ixx="0.196405"<ixy="0.0" ixz="0.0" iyy="0.196405" iyz="0.0" izz="0.00178436"/>
+
